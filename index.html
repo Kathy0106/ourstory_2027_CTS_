@@ -383,6 +383,7 @@
                             // ⏰ 完美整合嘅搶飛及預訂鬧鐘
                             alarms: [
                                 { date: '11月頭', task: '⚠️ 預約「政壽司」及「冰雪之門」(三大蟹)！' },
+                                { date: '11月頭', task: '⚠️ 預約「和牛富士山」打邊爐！' },
                                 { date: '12月7日', task: '🎫 JR官網搶 1/7 札幌落函館「北斗號」車飛！' },
                                 { date: '12月9日', task: '🎫 JR官網搶 1/9 函館返札幌「北斗號」車飛！' },
                                 { date: '出發前', task: '🛍️ 買定防滑雪靴及冰爪！' },
@@ -398,8 +399,9 @@
                                 { date: '1/6', time: '19:30', name: '冰雪之門 (三大蟹)', addr: '札幌市中央區南5條西2', bookingNo: '⚠️ 必須預約' },
                                 { date: '1/7', time: '19:00', name: '小丑漢堡 (Lucky Pierrot)', addr: '金森紅磚倉庫附近', bookingNo: '現場排隊' },
                                 { date: '1/8', time: '08:00', name: '函館朝市 (Kikuyo 食堂)', addr: '函館市若松町11-15', bookingNo: '現場排隊' },
-                                { date: '1/9', time: '20:00', name: '達摩成吉思汗烤肉', addr: '札幌狸小路周邊', bookingNo: '現場排隊' },
-                                { date: '1/10', time: '18:00', name: '政壽司 本店 (小樽)', addr: '小樽市色内1-2-1', bookingNo: '⚠️ 建議預約' }
+                                { date: '1/9', time: '19:30', name: '和牛富士山 (和牛打邊爐)', addr: '札幌市中央區大通西1丁目', bookingNo: '⚠️ 建議預約' },
+                                { date: '1/10', time: '18:00', name: '政壽司 本店 (小樽)', addr: '小樽市色内1-2-1', bookingNo: '⚠️ 建議預約' },
+                                { date: '1/11', time: '12:00', name: 'Suage+ / GARAKU (湯咖喱)', addr: '札幌市中心', bookingNo: '現場排隊' }
                             ],
                             
                             // 📅 更新後包含餐廳嘅每日行程
@@ -408,7 +410,7 @@
                                     { time: '16:00', title: '抵達新千歲機場 (CX584) ✈️', departTime: '17:00', travelTime: '1 hr', desc: '落機過關攞行李！如果未買 JR Pass 可以順便喺機場搞掂。', category: 'flight', transportType: 'walk', loc: '新千歳空港' },
                                     { time: '17:30', title: '搭 JR 前往札幌 🚆', departTime: '18:15', travelTime: '45 min', desc: '乘搭 JR 快速機場線 (Rapid Airport) 直達札幌。', category: 'transport', transportType: 'train', loc: '札幌駅' },
                                     { time: '18:30', title: 'Check-in 暖雪 札幌 🏨', departTime: '19:00', travelTime: '15 min', desc: '辦理入住！\n📍 地址: 札幌市中央區南6條東2-1-1', category: 'hotel', loc: '暖雪 札幌', transportType: 'walk', action: '⚠️ 最重要任務：向酒店提出 1/7 退房後，將大件行李免費寄存至 1/9 再次入住！' },
-                                    { time: '19:30', title: '晚餐：冰雪之門 (三大蟹大餐) 🦀', departTime: '21:30', travelTime: '10 min', desc: '北海道必食三大蟹！冬天極度爆滿，出發前必須提早預約！', category: 'food', loc: '氷雪の門', transportType: 'walk' },
+                                    { time: '19:30', title: '晚餐：冰雪之門 (三大蟹大餐) 🦀🍲', departTime: '21:30', travelTime: '10 min', desc: '✨ 已包含：極品生毛蟹 / 鱈場蟹涮涮鍋 (蟹肉打邊爐)！食完啲蟹肉記得用個蟹湯煮粥，超級鮮甜！', category: 'highlight', loc: '氷雪の門', transportType: 'walk', info: '💡 冬天極度爆滿，出發前必須提早預約！' },
                                     { time: '22:00', title: '回酒店浸天然溫泉 ♨️', departTime: '22:00', travelTime: '0 min', desc: '執好聽日去函館嘅輕便背囊，早啲休息！', category: 'hotel', loc: '暖雪 札幌', transportType: 'walk' }
                                 ]},
                                 { weekday: 'Thu', dateStr: '1/07', events: [
@@ -417,10 +419,10 @@
                                     { time: '13:00', title: 'Check-in fav 函館酒店 🏨', departTime: '13:30', travelTime: '5 min', desc: '酒店就喺車站附近，放低背囊即刻出發去玩！', category: 'hotel', loc: 'fav 函館', transportType: 'walk' },
                                     { time: '14:30', title: '五稜郭塔 俯瞰雪星堡壘 ⭐', departTime: '16:00', travelTime: '20 min', desc: '搭市電前往。冬天成個五角星會變成白色，極致震撼！', category: 'sightseeing', loc: '五稜郭タワー', transportType: 'train' },
                                     { time: '17:00', title: '函館山 百萬夜景 🚠', departTime: '18:30', travelTime: '30 min', desc: '搭纜車上山，睇世界三大夜景之一！雪地反光特別靚！', category: 'sightseeing', loc: '函館山ロープウェイ', transportType: 'train', info: '💡 山頂風大極凍，一定要著夠衫同帶頸巾！' },
-                                    { time: '19:00', title: '晚餐：幸運小丑漢堡 🍔', departTime: '20:30', travelTime: '15 min', desc: '全日本得函館先有嘅名物 Lucky Pierrot！必食中華雞腿堡！現場排隊買！', category: 'food', loc: 'ラッキーピエロ', transportType: 'walk' }
+                                    { time: '19:00', title: '晚餐：幸運小丑漢堡 (Lucky Pierrot) 🍔🤡', departTime: '20:30', travelTime: '15 min', desc: '全日本得函館先有嘅傳奇漢堡！票選全日本第一名！必食「中華雞腿堡 (Chinese Chicken Burger)」，炸雞外脆內軟沾滿甜酸醬！', category: 'highlight', loc: 'ラッキーピエロ', transportType: 'walk' }
                                 ]},
                                 { weekday: 'Fri', dateStr: '1/08', events: [
-                                    { time: '08:00', title: '函館朝市 釣魷魚體驗 🦑', departTime: '10:00', travelTime: '5 min', desc: '行去朝市體驗親自釣魷魚，即釣即食！推薦去「きくよ食堂」食埋滿滿嘅海鮮丼做早餐！', category: 'food', loc: '函館朝市', transportType: 'walk' },
+                                    { time: '08:00', title: '函館朝市 釣魷魚體驗 🦑', departTime: '10:00', travelTime: '5 min', desc: '行去朝市體驗親自釣魷魚，即釣即食！推薦去「きくよ食堂 (Kikuyo)」食埋滿滿嘅海鮮丼做早餐！', category: 'food', loc: '函館朝市', transportType: 'walk' },
                                     { time: '10:30', title: '元町地區 異國風情散步 🚶', departTime: '12:30', travelTime: '15 min', desc: '參觀函館正教會、舊公會堂，感受充滿西洋風情嘅街道。', category: 'sightseeing', loc: '元町', transportType: 'walk' },
                                     { time: '12:45', title: '八幡坂 日劇打卡位 📸', departTime: '13:15', travelTime: '10 min', desc: '一條直通向結冰海港嘅長斜路，兩邊樹上積滿雪，超級浪漫。', category: 'sightseeing', loc: '八幡坂', transportType: 'walk' },
                                     { time: '13:30', title: '金森紅磚倉庫 雪中漫步 🚢', departTime: '16:00', travelTime: '10 min', desc: '喺紅磚倉庫群尋寶買手信，影運河雪景。', category: 'shopping', loc: '金森赤レンガ倉庫', transportType: 'walk' },
@@ -432,20 +434,20 @@
                                     { time: '10:00', title: 'JR 特急北斗號 返回札幌 🚆', departTime: '13:50', travelTime: '3 hr 50 min', desc: '揮別函館，搭車返大本營。', category: 'transport', transportType: 'train' },
                                     { time: '14:30', title: 'Check-in 暖雪 札幌 🏨', departTime: '15:00', travelTime: '15 min', desc: '重新 Check-in，領回寄放嘅大行李！', category: 'hotel', loc: '暖雪 札幌', transportType: 'walk' },
                                     { time: '15:30', title: '札幌市區打卡 ❄️', departTime: '17:30', travelTime: '15 min', desc: '去大通公園、札幌市鐘樓影相打卡。', category: 'sightseeing', loc: '大通公園', transportType: 'train' },
-                                    { time: '18:00', title: '狸小路 瘋狂血拼 🛍️', departTime: '19:45', travelTime: '10 min', desc: '今日星期六，盡情喺狸小路補給藥妝同手信！', category: 'shopping', loc: '狸小路商店街', transportType: 'walk' },
-                                    { time: '20:00', title: '晚餐：達摩成吉思汗烤肉 🍖', departTime: '22:00', travelTime: '5 min', desc: '北海道必食！極品烤羊肉配啤酒！不能預約，要有現場排隊嘅心理準備。', category: 'food', loc: '成吉思汗だるま', transportType: 'walk' }
+                                    { time: '18:00', title: '狸小路 瘋狂血拼 🛍️', departTime: '19:15', travelTime: '10 min', desc: '今日星期六，盡情喺狸小路補給藥妝同手信！', category: 'shopping', loc: '狸小路商店街', transportType: 'walk' },
+                                    { time: '19:30', title: '晚餐：和牛富士山 (極品打邊爐) 🥩🍲', departTime: '21:30', travelTime: '10 min', desc: '喺 Le Trois 商場 8 樓，望住大通公園雪夜景，歎「北海道和牛涮涮鍋 / 壽喜燒」！', category: 'highlight', loc: '和牛しゃぶしゃぶ すき焼 富士山', transportType: 'walk', info: '💡 建議出發前一至兩個月 Book 定窗邊位！' }
                                 ]},
                                 { weekday: 'Sun', dateStr: '1/10', events: [
                                     { time: '09:30', title: '出發前往小樽 🚆', departTime: '10:10', travelTime: '40 min', desc: '搭 JR 快速列車直達小樽 (用 IC 卡拍卡入閘即可)。', category: 'transport', transportType: 'train', loc: '小樽駅' },
                                     { time: '10:30', title: '堺町通商店街 玻璃工藝與甜品 🍰', departTime: '14:30', travelTime: '10 min', desc: '漫步歐風街道，必去北一硝子館，同埋食 LeTAO 雙層芝士蛋糕！', category: 'shopping', loc: '堺町通り商店街', transportType: 'walk' },
                                     { time: '15:00', title: '小樽運河 白晝與黃昏 🛶', departTime: '17:30', travelTime: '10 min', desc: '影低日頭嘅雪景運河。等到入黑亮起煤氣燈，氣氛完全唔同，超級浪漫！', category: 'sightseeing', loc: '小樽運河', transportType: 'walk', info: '💡 建議可以體驗埋遊船河。' },
-                                    { time: '18:00', title: '晚餐：政壽司 本店 🍣', departTime: '20:00', travelTime: '10 min', desc: '《將太的壽司》原型名店！舒舒服服食頂級壽司，強烈建議預先 Book 定！', category: 'food', loc: 'おたる政寿司 本店', transportType: 'walk' },
+                                    { time: '18:00', title: '晚餐：政壽司 本店 🍣', departTime: '20:00', travelTime: '10 min', desc: '《將太的壽司》原型名店！舒舒服服食頂級壽司，強烈建議預先 Book 定！', category: 'highlight', loc: 'おたる政寿司 本店', transportType: 'walk' },
                                     { time: '20:30', title: '搭 JR 返回札幌 🚆', departTime: '21:10', travelTime: '40 min', desc: '結束浪漫嘅小樽一日遊。', category: 'transport', transportType: 'train' }
                                 ]},
                                 { weekday: 'Mon', dateStr: '1/11', events: [
                                     { time: '09:30', title: '最後補給 & 執行李 🧳', departTime: '11:00', travelTime: '0 min', desc: '將所有戰利品塞入大篋。', category: 'hotel', transportType: 'walk' },
                                     { time: '11:00', title: 'Check-out 暖雪 札幌 🏨', departTime: '11:30', travelTime: '15 min', desc: '帶住所有行李出發。', category: 'hotel', loc: '暖雪 札幌', transportType: 'walk' },
-                                    { time: '11:30', title: '札幌站午餐 / 買手信 🍜', departTime: '13:30', travelTime: '10 min', desc: '喺 JR 札幌站周邊食最後一碗拉麵或者湯咖喱。', category: 'food', loc: '札幌駅', transportType: 'walk' },
+                                    { time: '12:00', title: '午餐：札幌必食湯咖喱 🍛', departTime: '13:30', travelTime: '10 min', desc: '上機前最後衝刺！必食「Suage+」或「GARAKU」湯咖喱，香料熱湯配炸北海道甜南瓜、薯仔同巨型雞髀，暖胃滿分！', category: 'food', loc: 'Suage+', loc2: 'GARAKU', loc2Name: 'GARAKU', transportType: 'walk' },
                                     { time: '14:00', title: 'JR 快速機場線 🚆', departTime: '14:45', travelTime: '45 min', desc: '出發前往新千歲機場。', category: 'transport', transportType: 'train', loc: '新千歳空港' },
                                     { time: '15:00', title: '新千歲機場 終極掃貨 🛍️', departTime: '16:30', travelTime: '1.5 hr', desc: '機場國內線客運大樓超好買！買齊所有需要冷藏嘅生朱古力！', category: 'shopping', transportType: 'walk' },
                                     { time: '16:30', title: '辦理登機手續 (CX587) ✈️', departTime: '19:05', travelTime: '0 min', desc: '預留時間過海關，19:05 起飛返香港！', category: 'flight', transportType: 'walk' }
@@ -511,7 +513,7 @@
                     return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
                 },
                 itemCategoryName(cat) {
-                    const map = { sightseeing: '景點', food: '美食', shopping: '購物', transport: '交通', hotel: '住宿', flight: '航班' };
+                    const map = { sightseeing: '景點', food: '美食', shopping: '購物', transport: '交通', hotel: '住宿', flight: '航班', highlight: '重點推介' };
                     return map[cat] || '行程';
                 },
                 getTransportIcon(type) {
